@@ -40,6 +40,8 @@ Instruction.belongsTo(Food, {
     allowNull: false,
    
 });
+Food.hasMany(Ingredient, { foreignKey: 'idFood' });
+Food.hasMany(Instruction,{ foreignKey: 'idFood' });
 module.exports = Food;
 
 

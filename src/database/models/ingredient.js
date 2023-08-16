@@ -8,7 +8,7 @@ const Ingredient = sequelize.define("ingredient", {
         allowNull: false,
         primaryKey: true
     },
-    name: {
+    name_ingredient: {
         type: DataTypes.STRING,
         allowNull: false
     },
